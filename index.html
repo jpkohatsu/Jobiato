@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jobiato - Search for jobs and meetups in Austin</title>
+
+  <!--Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/css/materialize.min.css">
+
+  <!--Style CSS-->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo center"><img id="jobiatoLogo" src="./assets/images/jobiato.png"></img></a>
+
+    </div>
+  </nav>
+  </header>
+  <main>
+
+    <!--Login-->
+    <div class="container signInForm" id="googleSignInPage">
+      <h2>Log in</h2>
+      <input id="txtEmail" type="email" placeholder="Email">
+      <input type="password" id="txtPassword" placeholder="password">
+      <button id="btnLogin" class="btn btn-action">
+        Log in
+      </button>
+      <button id="btnSignUp" class="btn btn-secondary">
+        Sign Up
+      </button>
+
+
+
+    <!-- Log in with Google -->
+
+      <button class="btn waves-effect waves-light theSignInButton" onclick = "googleSignin()">Google Signin</button>
+       <!-- signInForm -->
+      </div>
+
+      <!--Search-->
+      <div class="container hide">
+        <button id="btnLogout" class="btn btn-action hide">
+          Log out
+        </button>
+        <div class="searchBar">
+          <h2>Search for jobs and events</h2>
+          <!--Row and form containing all content-->
+          <div class="row">
+            <form action="#" id="searchForm" class="col s12">
+              <!--Row containing all query content-->
+              <div class="row">
+                <div class="input-field col s12">
+                  <input id="query" type="search" class="">
+                  <label for="query">job title, company name, or networking group</label>
+                </div>
+              </div>
+              <!--Row containing all location and radius content-->
+              <div class="row">
+                <!-- <div class="input-field col s6">
+                  <input id="location" type="search" class="">
+                  <label for="location">city, state or zip code</label>
+                </div> -->
+                <div class="input-field col s6">
+                  <select class="browser-default" id="radius">
+                    <option value="10" selected>10 miles from me</option>
+                    <option value="20">20 miles from me</option>
+                    <option value="30">30 miles from me</option>
+                  </select>
+                </div>
+                <div class="input-field col s6">
+                  <button class="btn waves-effect waves-light theSubmitButton" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <!--Tab Titles and styling-->
+      <div class="container hide">
+        <div class="row allTabs">
+          <div class="col s12">
+            <ul class="tabs">
+              <li class="tab col s3 "><a class="active" href="#jobs">Jobs</a></li>
+              <li class="tab col s3 "><a href="#meetups">Meetups</a><span id="meetUpNumbers">1</span></li>
+              <span id="pageToggle">
+                <li class="col s6 right-align hide search">Search <i class="material-icons ">search</i></li>
+                <li class="col s6 right-align heart">My Jobs <i class="fa fa-heart  icon"><span id="myJobsCounter"></span></i></li>
+              </span>
+            </ul>
+          </div>
+        </div> <!-- allTabs -->
+      </div>
+
+      <!--Jobs Tab Start-->
+      <div id="jobs">
+
+      <!--Navbar-->
+
+
+
+
+
+
+        <!--Result Cards-->
+        <div class="container">
+          <div class="resultCards"></div>
+          <!-- <button class="btn btn-action loadMore hide right">Load More</button> -->
+        </div>
+
+        <!--Load More Jobs Button -->
+
+        <!--My Jobs Page-->
+        <div class="container">
+          <div class="myJobsPage hide"></div>
+        </div>
+
+
+
+      </div>
+
+        <!--Meetups Tab-->
+        <div class="container">
+          <div id="meetups"></div>
+        </div>
+
+
+
+
+
+
+      </div>
+
+
+  </main>
+
+  <!--Footer-->
+  <footer class="page-footer"></footer>
+
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <!-- jQuery UI -->
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <!-- Moment.JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+  <!-- Materiablize JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.99.0/js/materialize.min.js"></script>
+  <!--Javascript-->
+  <script src="https://www.gstatic.com/firebasejs/4.1.3/firebase.js"></script>
+
+  <script type="text/javascript" src="assets/javascript/javascript.js"></script>
+  <script src="./assets/javascript/meetup.js"></script>
+  <script src="./assets/javascript/cards.js"></script>
+  <!--<script type="text/javascript" src="./assets/javascript/localStorage.js"></script>-->
+  <script type="text/javascript" src="assets/javascript/firebaseAuth.js?ver=1.4"></script>
+
+
+
+</body>
+
+</html>

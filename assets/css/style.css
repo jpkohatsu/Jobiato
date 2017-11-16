@@ -1,0 +1,181 @@
+html {
+  background: url() no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.btn, .btn-large {
+    text-decoration: none;
+    color: #fff;
+    background-color: #1770aa;
+    text-align: center;
+    letter-spacing: .5px;
+    transition: .2s ease-out;
+    cursor: pointer;
+    margin: 2px;
+}
+
+nav, footer.page-footer {
+  background-color: #1770aa;
+}
+* {
+  box-sizing: border-box;
+}
+
+h1{
+    color: red;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.icon {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 11px;
+}
+
+#btnLogout {
+  float: right;
+}
+
+.allTabs {
+  margin-top: 5px;
+}
+
+.tabs .tab a.active {
+  border-bottom: 3px solid rgba(238,110,115,1);
+}
+
+#pageToggle {
+  padding: 5px;
+}
+
+#pageToggle>li {
+  padding: 0 0 0 .75rem;
+  font-size: 1rem;
+}
+
+#pageToggle {
+  text-transform: uppercase;
+
+}
+
+#pageToggle, #pageToggle i {
+  cursor: pointer;
+  color: #37474f !important;
+  padding-right: 0 !important;
+}
+
+#pageToggle:hover, #pageToggle i:hover {
+  color: #ee6e73;
+}
+
+li.search i {
+  position: relative;
+  bottom: -7px;
+}
+
+.heart {
+  font-size: 20px;
+}
+
+#jobs, #meetups {
+  overflow-x: hidden;
+}
+
+.input-field input[type=search] {
+  padding-left: 0;
+}
+
+.signInForm {
+  margin-bottom: 3rem;
+}
+
+.searchBar {
+  /*margin-top: 3rem;*/
+}
+
+#searchSubmit {
+  /*display: none;*/
+}
+
+#myJobsCounter {
+  margin-left: 10px;
+  font-family: 'Josefin Sans', sans-serif;
+  color: #ee6e73;
+}
+
+.loadMore {
+  margin-bottom: 30px;
+}
+
+/* ==============================
+CARD STYLES
+================================= */
+/* like/dislike buttons */
+.resultCards {
+  position: relative;
+  min-height: 700px;
+  /*overflow-x: hidden;*/
+}
+.job {
+  /* Hide cards initially; show with jQuery */
+  display: none;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-width: 100%;
+}
+
+.job .card .card-content {
+  /*height: 300px;*/
+}
+.job .card .card-content h4, .meetup .card .card-content h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+.job .card .card-content p, .meetup .card .card-content p {
+  margin-top: 1rem;
+}
+.job .card .likeButton i, .dislikeButton i {
+  font-size: 4rem;
+  transition: color .3s linear;
+}
+.job .card .dislikeButton i {
+  color: #f44336;
+}
+
+.job .card .likeButton i  {
+  float: right;
+  color: #4caf50;
+}
+.job .card .likeButton i:hover {
+  color: #388e3c !important;
+}
+.job .card .dislikeButton i:hover {
+  color: #c62828 !important;
+}
+
+.tabs{
+    overflow-x: hidden;
+}
+
+#jobiatoLogo {
+  height: auto;
+  width: 140px;
+  border-radius: 5px;
+  padding: 12px;
+}
+
+
+@media only screen and (max-width: 500px) {
+ #jobiatoLogo {
+   width: 130px;
+   padding: 8px;
+ }
+}
