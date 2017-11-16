@@ -19,10 +19,5 @@ $(document).on("click", ".likebutton", function(){
     $(key).attr("style", "display: block; position: relative !important;");
     $(key).clone().appendTo(".myJobsPage");
 
-
-
-
-    // Sorry! No Web Storage support..
-
 });
 });

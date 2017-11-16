@@ -162,29 +162,3 @@ function readUserData(userId){
 };
 
 
-
-
-
-// Google Calendar Integration (we can try and see if this works)
-
-// $("#auth").click(function() {
-//         var ref = new Firebase("https://greedforge/aviato.firebaseio.com/");
-
-//         ref.authWithOAuthPopup("google", function(error, authData) {
-//             if (error) {
-//                 console.log("Login Failed!", error);
-//                 console.log(error);
-//             } else {
-//                 console.log("Authenticated successfully with payload:", authData);
-//             }
-//         }, {
-//             "scope": "email, calendar"
-//         });
-
-//         return false;
-//       });
-//       $("#calendar").click(function() {
-//         $.getJSON('https://www.googleapis.com/calendar/v3/users/me/calendarList', function(data) {
-//             console.log(data);
-//         });
-//       });

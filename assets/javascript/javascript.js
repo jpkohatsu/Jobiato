@@ -8,7 +8,6 @@ $(document).ready(function() {
 // Functions to hide/show the searchResults and login form ////
 
 $("#btnLogout").on("click", function() {
-  // window.location.href="file:///Users/BrentG/Desktop/Aviato/index.html";
   $(".container").addClass("hide");
         $(".signInForm").removeClass("hide");
         $("#btnLogout").addClass("hide");
